@@ -3,7 +3,9 @@ import {nanoid} from 'nanoid';
 import NotesList from "./components/NotesLists";
 
 const App = () => {
-  const [notes] = useState([
+  
+  const [notes, setNotes] = useState([
+
     {
       id: nanoid(),
       text:"This is my first note",
