@@ -3,7 +3,9 @@ import {nanoid} from 'nanoid';
 import NotesList from "./components/NotesLists";
 
 const App = () => {
+  
   const [notes, setNotes] = useState([
+
     {
       id: nanoid(),
       text:"This is my first note",
@@ -23,7 +25,7 @@ const App = () => {
   
   return (
     <div className="container">
-      {<NotesList  notes = {notes}/>}
+      <NotesList  notes={notes}/>
     </div>
 
   );
